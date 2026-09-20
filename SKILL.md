@@ -1,9 +1,9 @@
 ---
-name: automate-this
+name: screencast-to-script
 description: Turns a screen recording (a screencast of someone doing a routine, ideally narrating out loud) into a working automation - reconstructs what the person does by hand and proposes or builds a script. Use when given a path to a video of a routine and asked "look at what I do / automate this". Also fine for "watch and analyze ANY video" (frames + voice transcript). Local, private, no cloud.
 ---
 
-# automate-this - screencast -> automation
+# screencast-to-script
 
 Take a screen recording of a person doing a routine (ideally while talking) and turn it into an understanding of the process plus a working automation. Everything runs locally: `ffmpeg` cuts frames **on scene changes**, a local ASR model transcribes the voice. It also works as plain "watch any video": then do only steps 1-2 and hand over the analysis.
 

@@ -1,20 +1,20 @@
-# automate-this
+# screencast-to-script
 
 Record your screen while you do a routine and talk through it; this skill turns the recording into a numbered list of what you actually do, then into a script that does it for you. Everything runs on your machine.
 
 ![frames and transcript from a run](i/run.png)
 
-**Try it:** put the folder into `~/.claude/skills/automate-this/`, then in Claude Code: *"here is a screencast of my morning routine: /path/to/video.mp4, automate this"*.
+**Try it:** put the folder into `~/.claude/skills/screencast-to-script/`, then in Claude Code: *"here is a screencast of my morning routine: /path/to/video.mp4, automate this"*.
 
 ![claude code skill](https://img.shields.io/badge/Claude%20Code-skill-111) ![local](https://img.shields.io/badge/runs-locally-111) ![deps](https://img.shields.io/badge/needs-ffmpeg%20%2B%20any%20whisper-111) ![license](https://img.shields.io/badge/license-MIT-111)
 
 ## Quick start
 
 ```bash
-git clone https://github.com/MrFreedxm/automate-this.git ~/.claude/skills/automate-this
+git clone https://github.com/MrFreedxm/screencast-to-script.git ~/.claude/skills/screencast-to-script
 brew install ffmpeg yt-dlp          # or apt / your package manager
 pip install mlx-whisper             # Apple Silicon; or: pip install openai-whisper / brew install whisper-cpp
-bash ~/.claude/skills/automate-this/scripts/transcribe.sh --check
+bash ~/.claude/skills/screencast-to-script/scripts/transcribe.sh --check
 ```
 
 Then give Claude Code a video and ask it to automate what it sees. The skill makes it stop after reconstructing the steps and wait for your corrections before it builds anything.

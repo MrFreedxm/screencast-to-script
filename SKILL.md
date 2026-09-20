@@ -16,7 +16,7 @@ Take a screen recording of a person doing a routine (ideally while talking) and 
 
 Working folder for this run:
 ```bash
-W="${TMPDIR:-/tmp}/automate-this/$(date +%s)"; mkdir -p "$W"
+W="${TMPDIR:-/tmp}/screencast-to-script/$(date +%s)"; mkdir -p "$W"
 ```
 Frames **on scene changes** (not on a timer: you do not miss slides, demos, cuts):
 ```bash
